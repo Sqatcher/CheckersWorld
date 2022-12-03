@@ -221,6 +221,22 @@ public class App extends Application {
         marked[3] = 0;
         clearBoard();
         drawBoard();
+
+        if (currentPlayer == 'w')
+        {
+            try {
+                Thread.sleep(500);
+            }
+            catch (InterruptedException ignored)
+            {
+
+            }
+            String[] c = CheckersLogic.CheckerBot.getMove('w', board, 0);
+            System.out.println(c[1]);
+            evaluateMove(c[1]);
+            clearBoard();
+            drawBoard();
+        }
     }
 
     private void clearBoard()
