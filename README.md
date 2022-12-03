@@ -1,2 +1,3 @@
 # CheckersWorld
- A game of checkers
+
+A game of checkers
